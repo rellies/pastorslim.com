@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Pimp from './PimpPls.gif';
+import Glitch from './TwitchGlitchPurple.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <img src={Pimp} className="Pimp" alt="logo" />
+        <p>Pastor Slim, aka Alabaster Slim, Bible Salesman</p> 
+        <p>Under Construction, mothafucka.</p>
+        <img src={Glitch} className="TwitchGlitch" alt="Twitch Logo" />
+        <a href="https://twitch.tv/Kyle">https://twitch.tv/Kyle</a>
+       </header>
     </div>
   );
 }
