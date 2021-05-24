@@ -1,11 +1,7 @@
 .nav {
     margin: 20px;
     padding: 18 px;
-    border-bottom: 2px solid #508fca;
-}
-
-.nav-item img {
-    display: inline-block;
+    border-bottom: 2px solid black;
 }
 
 .nav ul {
@@ -26,4 +22,12 @@
     margin-right: 32px;
     font-size: 24px;
     border-bottom: 4px solid transparent;
-  }
+}
+
+.Glitch {
+    display: inline-block;
+}
+
+#Kyle {
+    text-align: right;
+}

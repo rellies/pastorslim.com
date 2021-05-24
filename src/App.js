@@ -2,23 +2,21 @@ import React, { useState } from 'react';
 import Pastor from './PastorPls.gif';
 import Glitch from './TwitchGlitchPurple.png';
 import Nav from './Nav';
+import Home from './Home';
+import Footer from './Footer';
+import Contribute from './Contribute';
 import './App.css';
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState();
 
   return (
     <div className="App">
-        <Nav 
-          activeTab={activeTab}
-          onTabChange={setActiveTab}
-          />
+        <Nav activeTab={activeTab} onTabChange={setActiveTab} />
         <main className="PastorSlim-content">
-          <img src={Pastor} className="Pastor" alt="logo"/> 
-          <p>Pastor Alabastor Slim, Bible Salesman</p>
-          <p>Welcome, mothafucka.</p>
-          <img src={Glitch} className="Glitch" href="https://twitch.tv/Kyle"></img>
+          <Header tab={activeTab} />
         </main> 
+        <Footer />
     </div>
   );
  };
@@ -26,11 +24,11 @@ const App = () => {
   const Header = ({tab}) => {
       switch (tab) {
           case 'home':
-            return <span>home page</span>;
-          case 'kyle':
-            return <span>Kyle</span>;
+            return <Home />;
+          case 'contribute':
+            return <Contribute />;
           default:
-            break;
+            return <Home />;
       }
   } 
 
