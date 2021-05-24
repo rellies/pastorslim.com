@@ -1,5 +1,4 @@
 import React from 'react';
-import Glitch from './TwitchGlitchPurple.png';
 import Home from './Home';
 import './Nav.css';
 
@@ -21,6 +20,11 @@ const Nav = ({activeTab, onTabChange}) => {
             <li className={headerClass('contribute')}>
                 <button onClick={() => onTabChange('contribute')}>
                     Contribute
+                </button>
+            </li>
+            <li className={headerClass('sermons')}>
+                <button onClick={() => onTabChange('sermons')}>
+                    Sermons
                 </button>
             </li>
             <li className={headerClass('kyle')}>

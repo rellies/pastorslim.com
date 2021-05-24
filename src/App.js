@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Pastor from './PastorPls.gif';
-import Glitch from './TwitchGlitchPurple.png';
 import Nav from './Nav';
 import Home from './Home';
 import Footer from './Footer';
 import Contribute from './Contribute';
 import './App.css';
+
+// Do I need any more hooks? Probably.
 
 const App = () => {
   const [activeTab, setActiveTab] = useState();
@@ -27,6 +27,8 @@ const App = () => {
             return <Home />;
           case 'contribute':
             return <Contribute />;
+          case 'sermons':
+            return <span>Sermons</span>;
           default:
             return <Home />;
       }
