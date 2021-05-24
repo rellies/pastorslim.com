@@ -5,8 +5,13 @@
 }
 
 .Pastor {
-    width: 354px;
-    height: 280px;
+  width: 354px;
+  height: 280px;
+}
+
+.Glitch {
+  width: 28px;
+  height: 28px;
 }
 
 @media (prefers-color-scheme: dark) {
