@@ -1,15 +1,23 @@
 .App {
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Pastor {
+    width: 354px;
+    height: 280px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
   }
 }
 
@@ -26,23 +34,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-.Pimp {
-  background-color: transparent;
-  /* fill in l8r */
-}
-
-.TwitchGlitch {
-  display: inline;
-  height: 40px;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
