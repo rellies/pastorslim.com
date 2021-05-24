@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './Nav';
 import Home from './Home';
+import Sermons from './Sermons';
 import Footer from './Footer';
 import Contribute from './Contribute';
 import './App.css';
@@ -28,7 +29,7 @@ const App = () => {
           case 'contribute':
             return <Contribute />;
           case 'sermons':
-            return <span>Sermons</span>;
+            return <Sermons />;
           default:
             return <Home />;
       }
