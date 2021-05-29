@@ -9,7 +9,7 @@ import './App.css';
 // Do I need any more hooks? Probably.
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState('home');
 
   return (
     <div className="App">

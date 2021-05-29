@@ -9,7 +9,7 @@ const Home = () => {
             <img src={Pastor} className="Pastor" alt="logo"/> 
             <p>Pastor Alabastor Slim, Bible Salesman</p>
             <p>Welcome, mothafucka.</p>
-            <img src={Glitch} className="Glitch" href="https://twitch.tv/Kyle"></img>
+            <img src={Glitch} className="Glitch" alt="Twitch Gltich" href="https://twitch.tv/Kyle"></img>
         </div>
     );
 };
