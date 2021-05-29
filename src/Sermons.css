@@ -1,0 +1,11 @@
+.sermons .ReactPlayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* css sucks */
+p.announcement {
+    color:yellowgreen;
+}

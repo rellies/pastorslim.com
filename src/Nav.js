@@ -13,7 +13,7 @@ const Nav = ({activeTab, onTabChange}) => {
     <nav className="nav">
         <ul>
             <li className={headerClass('home')}>
-                <button onClick={() => onTabChange('home')}>
+                <button onClick={() => onTabChange(<Home />)}>
                     Home
                 </button>
             </li>
